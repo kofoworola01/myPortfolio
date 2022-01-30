@@ -1,0 +1,20 @@
+footer {
+  background-color: grey;
+  color: #000000;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.footer-icon {
+  font-size: 30px;
+  color: #000000;
+}
+.footer-social {
+  margin: 10px;
+}

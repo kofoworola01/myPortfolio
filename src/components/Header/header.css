@@ -1,0 +1,91 @@
+.mainWrapper {
+  height: 95vh;
+  background-image: linear-gradient(
+      to left top,
+      rgba(58, 49, 49, 0.78),
+      rgba(128, 128, 128, 0.781)
+    ),
+    url(./../../images/pc-flower-pot.jpeg);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80vh);
+  background-size: cover;
+  background-position: top;
+}
+.subWrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 7px;
+}
+.title {
+  font-size: 3rem;
+  font-size: clamp(2rem, calc(5vw + 1rem), 3rem);
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  animation: name 4s ease;
+  margin: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.btnWrapper {
+  background-color: #000;
+  align-self: flex-start;
+  /* height: 35px; */
+  padding: 10px;
+  margin: 15px;
+  border: 2px solid grey;
+  border-radius: 7px; 
+  text-decoration: none;
+  color: whitesmoke;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.btnWrapper:hover {
+  transform: translateY(-4px);
+  box-shadow: 4px 4px 8px black; 
+}
+.pic {
+  height: 230px;
+  border-radius: 50%;
+  margin: 20px;
+  /* align-self: flex-start; */
+}
+.lineWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line {
+  width: 200px;
+  height: 2px;
+  background-color: #000;
+}
+.star {
+  font-size: 40px;
+}
+h3 {
+  animation: moveInBottom 2s ease;
+  font-family: Arial, Helvetica, sans-serif;
+}
+@keyframes name {
+  0% {
+      opacity: 0;
+      transform: translateX(100%);
+  }
+  50% {
+      transform: translateX(-10px);
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
+@keyframes moveInBottom {
+  0% {
+      opacity: 0;
+      transform: translateY(50px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
