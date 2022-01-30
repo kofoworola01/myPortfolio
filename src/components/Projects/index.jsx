@@ -3,6 +3,7 @@ import CoffeeShop from "../../images/coffee.png";
 import Dummy from "../../images/pc-flower-pot.jpeg";
 import Portfolio from "../../images/portfolio.png";
 import TodoApp from "../../images/todo-app.png";
+import GlamifiedApp from '../../images/glamified.png'
 
 import "./projects.css";
 
@@ -19,7 +20,7 @@ const Project = () => {
             <img src={TodoApp} className='imgContainer' alt='' />
           </div>
           <div className='imgWrapper'>
-            <img src={TodoApp} className='imgContainer' alt='' />
+            <img src={GlamifiedApp} className='imgContainer' alt='' />
           </div>
           <div className='imgWrapper'>
             <img src={Portfolio} className='imgContainer' alt='' />
