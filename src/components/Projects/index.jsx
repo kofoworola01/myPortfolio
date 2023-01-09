@@ -10,7 +10,8 @@ import "./projects.css";
 
 const ProjectsList = [
   {
-    name: Journal
+    name: Journal,
+    url: 'https://online-journal.netlify.app'
   },
   {
     name: CoffeeShop
@@ -43,7 +44,7 @@ const Project = () => {
               <div className="overlay">
                 <div className="text">
                   <button className="project-btn">
-                    <a href={project.url} target="_blank">View Project</a>
+                    <a href={project.url} target="_blank" rel="noreferrer" >View Project</a>
                   </button>
                 </div>
               </div>
