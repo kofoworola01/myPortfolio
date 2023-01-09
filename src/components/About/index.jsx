@@ -25,14 +25,14 @@ const About = () => {
       bar: '60%',
     },
     {
+      name: 'TYPESCRIPT',
+      percentage: '80%',
+      bar: '80%',
+    },
+    {
       name: 'REACT-QUERY',
       percentage: '40%',
       bar: '40%',
-    },
-    {
-      name: 'ANT DESIGN',
-      percentage: '80%',
-      bar: '80%',
     },
     {
       name: 'REDUX',
@@ -46,9 +46,9 @@ const About = () => {
       <div className='aboutWrapper'>
           <div className='aboutContent'>
             <h1 className='aboutTitle'>Who is this girl?</h1>
-            I’m a self-taught Front End Developer with over a year hands-on
+            I’m a self-taught Front End Developer with over 2+ years hands-on
             experience developing websites and web applications using modern
-            FrontEnd technologies such as CSS 3, HTML 5, ES 6, React. I am a
+            FrontEnd technologies such as CSS 3, HTML 5, ES 6, React, TypeScript. I am a
             passionate developer who loves building and managing, beautiful,
             easy-to-use, user friendly, scalable software products targeted at
             solving human problems across different sectors and fields of life

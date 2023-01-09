@@ -4,33 +4,51 @@ import Dummy from "../../images/pc-flower-pot.jpeg";
 import Portfolio from "../../images/portfolio.png";
 import TodoApp from "../../images/todo-app.png";
 import GlamifiedApp from '../../images/glamified.png'
+import Journal from '../../images/journal.png'
 
 import "./projects.css";
 
+const ProjectsList = [
+  {
+    name: Journal
+  },
+  {
+    name: CoffeeShop
+  },
+  {
+    name: GlamifiedApp,
+    url: 'https://glamified.netlify.app'
+  },
+  {
+    name: Portfolio,
+    url: 'https://kofoworola.netlify.app'
+  },
+  {
+    name: TodoApp
+  },
+  {
+    name: Dummy
+  },
+]
+
 const Project = () => {
   return (
-    <div style={{background: '#eaedef', padding: 20}}>
+    <div style={{background: '#eaedef', padding: 20, margin: 30}}>
       <div>
         <h2 className='projectTitle'>My Projects</h2>
         <div className='projectWrapper'>
-          <div className='imgWrapper'>
-            <img src={CoffeeShop} className='imgContainer' alt='' />
-          </div>
-          <div className='imgWrapper'>
-            <img src={TodoApp} className='imgContainer' alt='' />
-          </div>
-          <div className='imgWrapper'>
-            <img src={GlamifiedApp} className='imgContainer' alt='' />
-          </div>
-          <div className='imgWrapper'>
-            <img src={Portfolio} className='imgContainer' alt='' />
-          </div>
-          <div className='imgWrapper'>
-            <img src={Dummy} className='imgContainer' alt='' />
-          </div>
-          <div className='imgWrapper'>
-            <img src={Dummy} className='imgContainer' alt='' />
-          </div>
+          {ProjectsList.map((project) => (
+            <div className='imgWrapper'>
+              <img src={project.name} className='imgContainer' alt='' />
+              <div className="overlay">
+                <div className="text">
+                  <button className="project-btn">
+                    <a href={project.url} target="_blank">View Project</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>
